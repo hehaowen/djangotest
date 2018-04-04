@@ -1,0 +1,38 @@
+{% extends "jdUsers/base_user.html" %}
+{% load static %}
+{% block title %}用户中心{% endblock title %}
+{% block uri %}>用户中心{% endblock uri %}
+{% block body %}
+    <div class="content fl ml10">
+        <div class="user_hd">
+            <h3>账户信息</h3>
+        </div>
+
+        <div class="user_bd mt10">
+            <form action="" method="post">
+                <ul>
+                    <li>
+                        <label for="">用户名：</label>
+                        <strong>diamondwang</strong>
+                    </li>
+                    <li>
+                        <label for="">昵称：</label>
+                        <input type="text" class="txt" value="diamondwang"/>
+                    </li>
+                    <li>
+                        <label for="">邮箱：</label>
+                        <strong>dw@163.com</strong>
+                    </li>
+                    <li>
+                        <label for="">手机号码：</label>
+                        <input type="text" class="txt" value="13333333333"/>
+                    </li>
+                    <li>
+                        <label for="">&nbsp;</label>
+                        <input type="submit" value="提交" class="sbtn"/>
+                    </li>
+                </ul>
+            </form>
+        </div>
+    </div>
+{% endblock body %}
